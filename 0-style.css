@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width:100%;
+    object-fit:cover;
+    object-position:center;
+}
+.pic1{
+    height: 320px;
+    margin: 100px;
+    overflow:hidden;
+}
+
+.lucky{
+    height:320px;
+    width:300px;
+    padding:6px;
+    box-sizing:border-box;
+    position:absolute;
+    bottom:-200px;
+    margin:1px;
+    color: white;
+}
+.pic1:hover{
+    cursor:pointer;
+    
+}
+p{
+    visibility:hiden;
+    opacity:0;
+    
+}
+.pic1:hover .lucky{
+    height:50px;
+    bottom:155px;
+    background-color:black;
+}
+.pic1:hover p{
+    visibility:visible;
+    opacity:1;
+    transition: transform 0.3s ease;
+}

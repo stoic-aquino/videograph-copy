@@ -1,0 +1,815 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+header{
+    background-image: url(home/hero-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100vh;
+}
+.navbar{
+    
+    width:100%;
+    color:white;
+    padding:35px 75px;
+    display:flex;
+    justify-content:space-between;
+}
+.navbar ul{
+    list-style:none;
+    gap:50px;
+    display:flex;
+}
+.navbar ul li{
+    position:relative;
+}
+.navbar ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    transition:0.3s ease;
+}
+.navbar ul li a::before{
+    content: "";
+    position:absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 10px;
+    background-color: rgb(6, 168, 243);
+    transition: 0.3s ease;
+}
+.navbar ul li a:hover{
+    color: white;
+}
+.navbar ul li a:hover::before{
+    width: 100%;
+}
+
+.navbar ul li .dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Position dropdown below the parent */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0; /* Remove padding from dropdown for cleaner look */
+    z-index: 1;
+}
+
+.navbar ul li .dropdown li {
+    width: 150px; /* Dropdown width */
+}
+
+.navbar ul li .dropdown li a {
+    color: #000 !important; /* Text color for dropdown items */
+    padding: 10px;
+    display: block;
+}
+
+/* Show dropdown on hover */
+.navbar ul li:hover .dropdown {
+    display: block;
+}
+.social-icons a {
+    color: white; /* Text color */
+    font-size: 14px; /* Placeholder text size */
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    background-color: #333; /* Background color for placeholder */
+    gap: 20px;
+    border-radius: 50%; /* Makes the placeholder circular */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+hr {
+   color: #333;
+}
+.headings{
+    color: #fff;
+    margin-left:80px;
+    margin-top:120px;
+}
+.headings p{
+    font-size:18px;
+    font-weight:400;
+    margin-bottom:30px;
+}
+.headings h2{
+    font-size:65px;
+    font-weight:700;
+    width:30px;
+    margin-bottom:50px;
+}
+.btn{
+    border:none;
+     background-color:transparent;
+     color:white;
+     font-size:1rem;
+     padding:10px 20px;
+     border: 3px solid rgb(25, 188, 194);
+     margin-top: 20px;
+     cursor: pointer;
+    }
+.headings ul{
+    list-style:none;
+    gap:20px;
+    display:flex;
+    margin-top: 35px;
+}
+.headings ul li{
+    position:relative;
+}
+.headings ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    transition:0.3s ease;
+}
+.headings ul li a::before{
+    content: "";
+    position:absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 1px;
+    background-color:white;
+    transition: 0.3s ease;
+}
+.headings ul li a:hover{
+    color: white;
+}
+.headings ul li a:hover::before{
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: end;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .headings {
+        margin-left: 20px;
+        margin-top: 50px;
+        
+    }
+
+    .headings p {
+        font-size: 14px;
+    }
+
+    .headings h2 {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .headings ul li a {
+        font-size: 16px;
+    }
+
+.work{
+    background-color: #100028;
+}
+.services {
+    color:white;
+    margin-left:20px;
+    padding-top:50px;
+    text-transform:uppercase;
+}
+.services p{
+   font-size:12px;
+    font-weight:500;
+}
+.services2{
+    padding-top:70px;
+    margin-left:20px;
+}
+.services p{
+    font-size:18px;
+     font-weight:500;
+     margin-bottom:20px
+ }
+ .services h2{
+     font-size:35px
+ }
+ .services2{
+     padding-top:70px;
+     margin-left:20px;
+     
+ }
+ .services2 p{
+     color:gray;
+     font-size:10px;
+     margin-bottom:30px
+ }
+ .services2 a{
+     color:white;
+     text-decoration:none
+ }
+ .aquino{
+     border:none;
+     background-color:transparent;
+     color:white;
+     font-size:1rem;
+     padding:10px 20px;
+     border: 3px solid rgb(25, 188, 194);
+     margin-top: 20px;
+     margin-bottom:80px;
+     
+ }
+ .line{
+    padding:3px 40px;
+    background-color: rgb(25, 188, 194);
+    border: none;
+ }
+ .image{
+    margin-left:40px;
+    border:3px solid rgb(25, 188, 194);
+    padding: 30px 30px;
+    width:30%;
+    text-align:center;
+    margin-bottom: 40px;
+    overflow: hidden; /* Ensures the rotation does not affect the image */
+    transition: transform 0.3s ease; /* Smooth rotation transition */
+
+}
+.image:hover {
+    transform: rotate(45deg); /* Adjust the rotation angle as needed */
+}
+
+.image img {
+    display: block;
+    width: 100%; /* Makes sure the image scales to fit within the border */
+}
+.motion{
+    margin-left: 20px;
+
+}
+.motion h4{
+    color: white;
+    font-size:20px;
+    margin-bottom:20px
+}
+.motion p{
+    color: gray;
+    margin-bottom:60px;
+}
+ .image2{
+    margin-left:40px;
+    border:3px solid rgb(25, 188, 194);
+    padding: 30px 30px;
+    width:30%;
+    text-align:center;
+    margin-bottom: 40px;
+    overflow: hidden; /* Ensures the rotation does not affect the image */
+    transition: transform 0.3s ease; /* Smooth rotation transition */
+}
+.image2:hover {
+    transform: rotate(45deg); /* Adjust the rotation angle as needed */
+}
+
+.image2 img {
+    display: block;
+    width: 100%; /* Makes sure the image scales to fit within the border */
+}
+.editting{
+    margin-left: 20px;
+
+}
+.editting h4{
+    color: white;
+    font-size:20px;
+    margin-bottom:20px
+}
+.editting p{
+    color: gray;
+    margin-bottom:60px;
+}
+ .image3{
+    margin-left:40px;
+    border:3px solid rgb(25, 188, 194);
+    padding: 30px 30px;
+    width:30%;
+    text-align:center;
+    margin-bottom: 40px;
+    overflow: hidden; /* Ensures the rotation does not affect the image */
+    transition: transform 0.3s ease; /* Smooth rotation transition */
+}
+.image3:hover {
+    transform: rotate(45deg); /* Adjust the rotation angle as needed */
+}
+
+.image3 img {
+    display: block;
+    width: 100%; /* Makes sure the image scales to fit within the border */
+}
+.video{
+    margin-left: 20px;
+
+}
+.video h4{
+    color: white;
+    font-size:20px;
+    margin-bottom:20px
+}
+.video p{
+    color: gray;
+    margin-bottom:60px;
+}
+ .image4{
+    margin-left:40px;
+    border:3px solid rgb(25, 188, 194);
+    padding: 30px 30px;
+    width:30%;
+    text-align:center;
+    margin-bottom: 40px;
+    overflow: hidden; /* Ensures the rotation does not affect the image */
+    transition: transform 0.3s ease; /* Smooth rotation transition */
+}
+.image4:hover {
+    transform: rotate(45deg); /* Adjust the rotation angle as needed */
+}
+
+.image4 img {
+    display: block;
+    width: 100%; /* Makes sure the image scales to fit within the border */
+}
+.hosting{
+    margin-left: 20px;
+
+}
+.hosting h4{
+    color: white;
+    font-size:20px;
+    margin-bottom:20px
+}
+.hosting p{
+    color: gray;
+    padding-bottom:200px
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pic1 img{
+    width:100%;
+    object-fit:cover;
+    object-position:center;
+}
+.pic1{
+   
+    overflow:hidden;
+}
+
+.lucky{
+    
+    width:375px;
+    padding:16px 10px ;
+    box-sizing:border-box;
+    position:relative;
+    top:-84px;
+    color: white;
+}
+.pic1:hover{
+    cursor:pointer;
+    
+}
+.lucky{
+    visibility:hiden;
+    opacity:0;
+    
+}
+.pic1:hover .lucky{
+    height:80px;
+    bottom:155px;
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(home/team-hover.png);
+}
+.pic1:hover .lucky{
+    visibility:visible;
+    opacity:1;
+    transition: transform 0.3s ease-in-out;
+}
+.pic2{
+    width:100%;
+    
+}
+.pic2 img{
+    width:100%;
+    object-fit:cover;
+    height:100%;
+    margin-top:-75px;
+}
+.pic3{
+    width:100%;
+    margin-top:-65px;
+    
+}
+.pic3 img{
+    width:100%;
+    object-fit:cover;
+    object-position:center;
+    height:70%;
+}
+.pic4{
+    margin-top:-105px;
+    overflow: hidden;
+}
+.pic4 img{
+    width:100%;
+    object-fit:cover;
+    object-position:center;
+}
+.lucky2{
+    
+    width:375px;
+    padding:16px 10px ;
+    box-sizing:border-box;
+    position:relative;
+    top:-84px;
+    color: white;
+}
+.pic4:hover{
+    cursor:pointer;
+    
+}
+.lucky2{
+    visibility:hiden;
+    opacity:0;
+    
+}
+.pic4:hover .lucky2{
+    height:80px;
+    bottom:155px;
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(home/team-hover.png);
+}
+.pic4:hover .lucky2{
+    visibility:visible;
+    opacity:1;
+    transition: transform 0.3s ease-in-out;
+}
+.pic5{
+    width:100%;
+    margin-top:-70px;
+}
+.pic5 img{
+    width:100%;
+    object-fit:cover;
+    object-position:center;
+}
+.pic6{
+    width:100%;
+    margin-top:9px;
+}
+.pic6 img{
+    width:100%;
+    object-fit:cover;
+    object-position:center;
+}
+.pic7 img{
+    width:100%;
+    object-fit:cover;
+    object-position:center;
+}
+.pic7{
+    margin-bottom:10px;
+    overflow: hidden;
+    margin-top:10px;
+}
+.lucky3{
+    
+    width:375px;
+    padding:16px 10px ;
+    box-sizing:border-box;
+    position:relative;
+    top:-84px;
+    color: white;
+}
+.pic7:hover{
+    cursor:pointer;
+    
+}
+.lucky3{
+    visibility:hiden;
+    opacity:0;
+    
+}
+.pic7:hover .lucky3{
+    height:80px;
+    bottom:155px;
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(home/team-hover.png);
+}
+.pic7:hover .lucky3{
+    visibility:visible;
+    opacity:1;
+    transition: transform 0.3s ease-in-out;
+}
+.container{
+    background-color: #100028;
+    padding-bottom: 30px;
+}
+.tin1{
+    text-align:center;
+     margin-top:100px;
+     border:60px solid #1a083d;
+     background-color:#1a083d;
+     width:90%;
+     margin-left:20px;
+ }
+ .tin1 h2{
+     color:white;
+     font-size:50px;
+     margin-top:20px;
+ }
+ .tin1 p{
+     color:white;
+     font-size:12px;
+     margin-top:10px;
+ }
+ .tin2{
+    text-align:center;
+     margin-top:30px;
+     border:60px solid #1a083d;
+     background-color:#1a083d;
+     width:90%;
+     margin-left:20px;
+ }
+ .tin2 h2{
+     color:white;
+     font-size:50px;
+     margin-top:20px;
+ }
+ .tin2 p{
+     color:white;
+     font-size:12px;
+     margin-top:10px;
+ }
+ .tin3{
+    text-align:center;
+     margin-top:30px;
+     border:60px solid #1a083d;
+     background-color:#1a083d;
+     width:90%;
+     margin-left:20px;
+ }
+ .tin3 h2{
+     color:white;
+     font-size:50px;
+     margin-top:20px;
+ }
+ .tin3 p{
+     color:white;
+     font-size:12px;
+     margin-top:10px;
+ }
+ .tin4{
+    text-align:center;
+     margin-top:30px;
+     border:60px solid #1a083d;
+     background-color:#1a083d;
+     width:90%;
+     margin-left:20px;
+ }
+ .tin4 h2{
+     color:white;
+     font-size:50px;
+     margin-top:20px;
+ }
+ .tin4 p{
+     color:white;
+     font-size:12px;
+     margin-top:10px;
+ }
+ .teamwrap{
+    background-image: url(home/breadcrumb-bg.jpg);
+    padding-bottom: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .ourteam {
+    color:white;
+    margin-left:20px;
+    padding-top:50px;
+    text-transform:uppercase;
+}
+.ourteam p{
+   font-size:12px;
+    font-weight:500;
+}
+.line2{
+    padding:3px 40px;
+    background-color: rgb(25, 188, 194);
+    border: none;
+ }
+ .teams{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    
+ }
+ .teams img{
+    margin-left: 20px;
+    width: 90%;
+
+ }
+ .team1{
+   
+    overflow:hidden;
+}
+
+.lucky4{
+    margin-left:20px;
+    width:90%;
+    padding:16px 70px;
+    box-sizing:border-box;
+    position:relative;
+    top:-84px;
+    color: white;
+}
+.team1:hover{
+    cursor:pointer;
+    
+}
+.lucky4{
+    visibility:hiden;
+    opacity:0;
+    
+}
+.team1:hover .lucky4{
+    height:80px;
+    bottom:155px;
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(home/team-hover.png);
+}
+.team1:hover .lucky4{
+    visibility:visible;
+    opacity:1;
+    transition: transform 0.3s ease-in-out;
+}
+.team2{
+    margin-top:-60px;
+    overflow:hidden;
+}
+
+.lucky5{
+    margin-left:20px;
+    width:90%;
+    padding:16px 70px;
+    box-sizing:border-box;
+    position:relative;
+    top:-84px;
+    color: white;
+}
+.team2:hover{
+    cursor:pointer;
+    
+}
+.lucky5{
+    visibility:hiden;
+    opacity:0;
+    
+}
+.team2:hover .lucky5{
+    height:80px;
+    bottom:155px;
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(home/team-hover.png);
+}
+.team2:hover .lucky5{
+    visibility:visible;
+    opacity:1;
+    transition: transform 0.3s ease-in-out;
+}
+.team3{
+    margin-top:-60px;
+    overflow:hidden;
+}
+
+.lucky6{
+    margin-left:20px;
+    width:90%;
+    padding:16px 70px;
+    box-sizing:border-box;
+    position:relative;
+    top:-84px;
+    color: white;
+}
+.team3:hover{
+    cursor:pointer;
+    
+}
+.lucky6{
+    visibility:hiden;
+    opacity:0;
+    
+}
+.team3:hover .lucky6{
+    height:80px;
+    bottom:155px;
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(home/team-hover.png);
+}
+.team3:hover .lucky6{
+    visibility:visible;
+    opacity:1;
+    transition: transform 0.3s ease-in-out;
+}
+.team4{
+    margin-top:-60px;
+    overflow:hidden;
+}
+
+.lucky7{
+    margin-left:20px;
+    width:90%;
+    padding:16px 70px;
+    box-sizing:border-box;
+    position:relative;
+    top:-84px;
+    color: white;
+}
+.team4:hover{
+    cursor:pointer;
+    
+}
+.lucky7{
+    visibility:hiden;
+    opacity:0;
+    
+}
+.team4:hover .lucky7{
+    height:80px;
+    bottom:155px;
+    background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(home/team-hover.png);
+}
+.team4:hover .lucky7{
+    visibility:visible;
+    opacity:1;
+    transition: transform 0.3s ease-in-out;
+}
+
+ .aquino2{
+    border:none;
+    background-color:transparent;
+    color:white;
+    font-size:1rem;
+    padding:10px 30px;
+    border: 3px solid rgb(25, 188, 194);
+    margin-top: 70px;
+    margin-bottom:70px;
+    font-weight: 600;
+    margin-left: 20PX;
+    
+}
+.ourblog{
+    background-color: #100028;
+}
+.blog-update {
+    color:white;
+    padding-top:50px;
+}
+.blog-update p{
+   font-size:16px;
+    font-weight:500;
+    text-align:center;
+    margin-bottom:10px;
+}
+.blog-update h2{
+    margin-left:90px;
+    font-size:30px;
+    margin-bottom:10px;
+}
+.line3{
+    padding:3px 40px;
+    background-color: rgb(25, 188, 194);
+    border: none;
+    margin-bottom:100px;
+    margin-left:150px;
+ }
+ 
+}
